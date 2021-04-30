@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="196.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AKINSOFT WOLVOX 7 " textAlignment="CENTER" wrappingWidth="206.78125">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="167.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HIZLI STOK SAYMA MODÜLÜ" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="anchor_main_page" layoutX="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="settings_icon" fitHeight="49.0" fitWidth="48.0" layoutX="23.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/settings_icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="243.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod Okutunuz..." />
+            <TextField fx:id="input_barkod_main_page" layoutX="133.0" layoutY="173.0" prefHeight="27.0" prefWidth="332.0" />
+            <Button fx:id="button_ok_page_main" layoutX="267.0" layoutY="208.0" mnemonicParsing="false" text="Tamam">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_product_page" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Text layoutX="41.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün Bİlgileri">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="CurrentTotalAmount" layoutX="38.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eldeki Miktar : xxxxx ADET" />
+            <Text fx:id="stok_adi" layoutX="38.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stok Adı : xxxxxxxxxxxxxxxxxxxxxxxxxxxx" wrappingWidth="549.72998046875" />
+            <Text fx:id="stok_kodu" layoutX="38.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stok Kodu : xxxxxxxxxx" wrappingWidth="294.72998046875" />
+            <Text fx:id="barkodu" layoutX="38.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkodu : xxxxxxxxxxxxxxxxx" wrappingWidth="294.72998046875" />
+            <Text fx:id="bl_kodu" layoutX="38.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bilgi Kodu : xxxxxx" wrappingWidth="294.72998046875" />
+            <TextField fx:id="input_amount" layoutX="217.0" layoutY="297.0" />
+            <Text layoutX="205.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürünün Olması Gereken Miktarı" textAlignment="CENTER" />
+            <ImageView fx:id="back_icon" fitHeight="41.0" fitWidth="40.0" layoutX="21.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/back_icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fx:id="birim" layoutX="396.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADET" />
+            <Button fx:id="button_ok_product_page" layoutX="267.0" layoutY="331.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="66.0" text="Tamam">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+      <Text fill="#6b54b5" layoutX="420.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author: Emir Taha BAHÇECİ" />
+      <AnchorPane fx:id="anchor_page_settings" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Text layoutX="30.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İP ADRESİ :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERİTABANI DOSYA YOLU :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KULLANICI ADI :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVRAK NO :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ip_adress" focusTraversable="false" layoutX="221.0" layoutY="102.0" prefHeight="27.0" prefWidth="314.0" />
+            <TextField fx:id="file_path" focusTraversable="false" layoutX="221.0" layoutY="142.0" prefHeight="27.0" prefWidth="314.0" />
+            <TextField fx:id="username" focusTraversable="false" layoutX="221.0" layoutY="182.0" prefHeight="27.0" prefWidth="314.0" />
+            <TextField fx:id="password" focusTraversable="false" layoutX="221.0" layoutY="222.0" prefHeight="27.0" prefWidth="314.0" />
+            <TextField fx:id="evrak_no" focusTraversable="false" layoutX="221.0" layoutY="262.0" prefHeight="27.0" prefWidth="314.0" />
+            <ImageView fx:id="icon_back_2" fitHeight="41.0" fitWidth="40.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/back_icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

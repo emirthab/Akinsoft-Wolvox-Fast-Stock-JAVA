@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StokSayma:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StokSayma_jar</output-path>
+    <root id="archive" name="StokSayma.jar">
+      <element id="module-output" name="StokSayma" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/java-json.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jaybird-full-4.0.0.java8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
